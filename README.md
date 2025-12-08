@@ -1,4 +1,4 @@
-# SCRAPE_ONLY
+# Vacature scraper brokerplaformen
 Deze tool scraped automatisch elke nacht vacatures van verschillende brokerplatformen, en matcht de best passende vacatures bij een CV dat je upload.
 Link naar de tool: https://cv-v2-app-673359121713.europe-west4.run.app <br>
 <br>
