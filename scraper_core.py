@@ -30,6 +30,7 @@ from platformen.noorderlink import scrape_noorderlink
 from platformen.vacaturebanknoordnederland import scrape_vacaturebanknoordnederland
 from platformen.vacaturesnoordholland import scrape_vacaturesnoordholland
 from platformen.werkenbijnod import scrape_werkenbijnod
+from platformen.werkeningelderland import scrape_werkeningelderland
 
 def run_with_timeout(func, timeout_seconds):
     result = {}
@@ -75,9 +76,10 @@ def scrape_all_jobs():
         ("Vacaturebanknoordnederland", scrape_vacaturebanknoordnederland),
         ("Vacaturesnoordholland", scrape_vacaturesnoordholland),
         ("Werkenbijnod", scrape_werkenbijnod),
+        ("Werkeningelderland", scrape_werkeningelderland),
     ]
 
-    TIMEOUT_SECONDS = 2600  # 10 minuten per site
+    TIMEOUT_SECONDS = 2800  # 10 minuten per site
 
     for name, func in SCRAPERS:
         print(f"➡️ Start scrape: {name}")
